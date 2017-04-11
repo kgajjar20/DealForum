@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealsForum", "DealsForum\DealsForum.csproj", "{690DD0DA-D6A9-4076-9602-A0574ACB6521}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealsForum.Models", "DealsForum.Models\DealsForum.Models.csproj", "{B2B6C5B2-CFDC-434A-928C-F84B701E95DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealsForum.Common", "DealsForum.Common\DealsForum.Common.csproj", "{81191177-DD9E-42EB-8464-348043C82FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{690DD0DA-D6A9-4076-9602-A0574ACB6521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690DD0DA-D6A9-4076-9602-A0574ACB6521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690DD0DA-D6A9-4076-9602-A0574ACB6521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690DD0DA-D6A9-4076-9602-A0574ACB6521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B6C5B2-CFDC-434A-928C-F84B701E95DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B6C5B2-CFDC-434A-928C-F84B701E95DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B6C5B2-CFDC-434A-928C-F84B701E95DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B6C5B2-CFDC-434A-928C-F84B701E95DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81191177-DD9E-42EB-8464-348043C82FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81191177-DD9E-42EB-8464-348043C82FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81191177-DD9E-42EB-8464-348043C82FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81191177-DD9E-42EB-8464-348043C82FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

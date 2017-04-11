@@ -1,0 +1,5 @@
+D:\MasterProject\DealsForum\DealsForum\DealsForum.Common\obj\Debug\DealsForum.Common.csprojResolveAssemblyReference.cache
+D:\MasterProject\DealsForum\DealsForum\DealsForum.Common\bin\Debug\DealsForum.Common.dll
+D:\MasterProject\DealsForum\DealsForum\DealsForum.Common\bin\Debug\DealsForum.Common.pdb
+D:\MasterProject\DealsForum\DealsForum\DealsForum.Common\obj\Debug\DealsForum.Common.dll
+D:\MasterProject\DealsForum\DealsForum\DealsForum.Common\obj\Debug\DealsForum.Common.pdb

@@ -1,0 +1,763 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm"}))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="flexnav-menu-button" id="flexnav-menu-button">Menu<span class="touch-button"></span></div>
+                    <nav>
+                        <ul class="nav nav-pills flexnav lg-screen" id="flexnav" data-breakpoint="800">
+                            <li class="active item-with-ul">
+                                <a href="index.html">Home</a>
+                                <ul style="display: none;">
+                                    <li class="item-with-ul">
+                                        <a href="index-shop-layout-1.html">Shop Layout</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="index-shop-layout-1.html">Layout 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-shop-layout-2.html">Layout 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-shop-layout-3.html">Layout 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-shop-layout-4.html">Layout 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-shop-layout-5.html">Layout 5</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                    <li class="item-with-ul">
+                                        <a href="index-coupon-layout-1.html">Coupon Layout</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="index-coupon-layout-1.html">Layout 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-coupon-layout-2.html">Layout 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-coupon-layout-3.html">Layout 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html">Layout 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-coupon-layout-5.html">Layout 5</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-coupon-layout-6.html">Layout 6</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                    <li class="active item-with-ul">
+                                        <a href="index-header-layout-1.html">Headers</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="index-header-layout-1.html">Layout 1</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="index-header-layout-2.html">Layout 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-header-layout-3.html">Layout 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-header-layout-4.html">Layout 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-header-layout-5.html">Layout 5</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-header-logged-user.html">Logged User</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                </ul>
+                                <span class="touch-button"></span>
+                            </li>
+                            <li class="item-with-ul">
+                                <a href="category-page-shop.html">Category</a>
+                                <ul style="display: none;">
+                                    <li>
+                                        <a href="category-page-shop.html">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="category-page-coupon.html">Coupon</a>
+                                    </li>
+                                    <li class="item-with-ul">
+                                        <a href="category-page-thumbnails-shop-layout-1.html">Thumbnails</a>
+                                        <ul style="display: none;">
+                                            <li class="item-with-ul">
+                                                <a href="category-page-thumbnails-shop-layout-1.html">Shop</a>
+                                                <ul style="display: none;">
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-layout-1.html">Layout 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-layout-2.html">Layout 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-layout-3.html">Layout 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-layout-4.html">layout 4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-layout-5.html">Layout 5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-layout-6.html">Layout 6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-shop-horizontal.html">Horizontal</a>
+                                                    </li>
+                                                </ul>
+                                                <span class="touch-button"></span>
+                                            </li>
+                                            <li class="item-with-ul">
+                                                <a href="category-page-thumbnails-coupon-layout-1.html">Coupon</a>
+                                                <ul style="display: none;">
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-1.html">Layout 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-2.html">Layout 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-3.html">Layout 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-4.html">Layout 4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-5.html">Layout 5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-6.html">Layout 6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-7.html">Layout 7</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-layout-8.html">Layout 8</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-page-thumbnails-coupon-horizontal.html">Horizontal</a>
+                                                    </li>
+                                                </ul>
+                                                <span class="touch-button"></span>
+                                            </li>
+                                            <li>
+                                                <a href="category-page-thumbnails-breadcrumbs.html">Breadcrumbs</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                </ul>
+                                <span class="touch-button"></span>
+                            </li>
+                            <li class="item-with-ul">
+                                <a href="product-shop-sidebar.html">Product </a>
+                                <ul style="display: none;">
+                                    <li class="item-with-ul">
+                                        <a href="product-shop-sidebar.html">Shop</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="product-shop-sidebar.html">Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-shop-sidebar-left.html">Sidebar Left</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-shop-centered.html">Centered</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                    <li class="item-with-ul">
+                                        <a href="product-coupon-default.html">Coupon</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="product-coupon-default.html">Default</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-coupon-meta-right.html">Meta right</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-coupon-gallery.html">Gallery</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                </ul>
+                                <span class="touch-button"></span>
+                            </li>
+                            <li class="item-with-ul">
+                                <a href="features-typography.html">Features</a>
+                                <ul style="display: none;">
+                                    <li>
+                                        <a href="features-typography.html">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-elements.html">Elements</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-grid.html">Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-icons.html">Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-image-hover.html">Image Hovers</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-sliders.html">Sliders</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-media.html">Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="features-lightbox.html">Lightbox</a>
+                                    </li>
+                                </ul>
+                                <span class="touch-button"></span>
+                            </li>
+                            <li class="item-with-ul">
+                                <a href="blog-sidebar-right.html">Blog</a>
+                                <ul style="display: none;" class="">
+                                    <li>
+                                        <a href="blog-sidebar-right.html">Sidebar Right</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-sidebar-left.html">Sidebar Left</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-full-width.html">Full Width</a>
+                                    </li>
+                                    <li class="item-with-ul">
+                                        <a href="post-sidebar-right.html">Post</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="post-sidebar-right.html">Sidebar Right</a>
+                                            </li>
+                                            <li>
+                                                <a href="post-sidebar-left.html">Sidebar Left</a>
+                                            </li>
+                                            <li>
+                                                <a href="post-full-width.html">Full Width</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                </ul>
+                                <span class="touch-button"></span>
+                            </li>
+                            <li class="item-with-ul">
+                                <a href="#">Pages</a>
+                                <ul style="display: none;" class="">
+                                    <li class="item-with-ul">
+                                        <a href="page-my-account-settings.html">My Account</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="page-my-account-settings.html">Settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-my-account-addresses.html">Address Book</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-my-account-orders.html">Orders History</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-my-account-wishlist.html">Wishlist</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                    <li>
+                                        <a href="page-full-width.html">Full Width</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-sidebar-right.html">Sidebar Right</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-sidebar-left.html">Sidebar Left</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-faq.html">Faq</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-about-us.html">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-team.html">Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-cart.html">Shopping Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-checkout.html">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-404.html">404</a>
+                                    </li>
+                                    <li class="item-with-ul">
+                                        <a href="page-search.html">Search</a>
+                                        <ul style="display: none;">
+                                            <li>
+                                                <a href="page-search-black.html">Black</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-search-white.html">White</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-search-sticky.html">Sticky</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-search-no-search.html">No Search</a>
+                                            </li>
+                                        </ul>
+                                        <span class="touch-button"></span>
+                                    </li>
+                                    <li>
+                                        <a href="page-contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                                <span class="touch-button"></span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <ul class="login-register">
+                        <li class="shopping-cart">
+                            <a href="page-cart.html"><i class="fa fa-shopping-cart"></i>My Cart</a>
+                            <div class="shopping-cart-box">
+                                <ul class="shopping-cart-items">
+                                    <li>
+                                        <a href="product-shop-sidebar.html">
+                                            <img src="img/70x70.png" alt="Image Alternative text" title="AMaze">
+                                            <h5>New Glass Collection</h5><span class="shopping-cart-item-price">$150</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="product-shop-sidebar.html">
+                                            <img src="img/70x70.png" alt="Image Alternative text" title="Gamer Chick">
+                                            <h5>Playstation Accessories</h5><span class="shopping-cart-item-price">$170</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-inline text-center">
+                                    <li>
+                                        <a href="page-cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="page-checkout.html"><i class="fa fa-check-square"></i> Checkout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="page-my-account-settings.html"><i class="fa fa-user"></i>@User.Identity.GetUserName()</a>
+                        </li>
+                        <li>
+                            <a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out"></i>Log Out</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="flexnav-menu-button" id="flexnav-menu-button">Menu<span class="touch-button"></span></div>
+                <nav>
+                    <ul class="nav nav-pills flexnav lg-screen" id="flexnav" data-breakpoint="800">
+                        <li class="active item-with-ul">
+                            <a href="index.html">Home</a>
+                            <ul style="display: none;">
+                                <li class="item-with-ul">
+                                    <a href="index-shop-layout-1.html">Shop Layout</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="index-shop-layout-1.html">Layout 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-shop-layout-2.html">Layout 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-shop-layout-3.html">Layout 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-shop-layout-4.html">Layout 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-shop-layout-5.html">Layout 5</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                                <li class="item-with-ul">
+                                    <a href="index-coupon-layout-1.html">Coupon Layout</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="index-coupon-layout-1.html">Layout 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-coupon-layout-2.html">Layout 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-coupon-layout-3.html">Layout 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html">Layout 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-coupon-layout-5.html">Layout 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-coupon-layout-6.html">Layout 6</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                                <li class="active item-with-ul">
+                                    <a href="index-header-layout-1.html">Headers</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="index-header-layout-1.html">Layout 1</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="index-header-layout-2.html">Layout 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-header-layout-3.html">Layout 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-header-layout-4.html">Layout 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-header-layout-5.html">Layout 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-header-logged-user.html">Logged User</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                            </ul>
+                            <span class="touch-button"></span>
+                        </li>
+                        <li class="item-with-ul">
+                            <a href="category-page-shop.html">Category</a>
+                            <ul style="display: none;">
+                                <li>
+                                    <a href="category-page-shop.html">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="category-page-coupon.html">Coupon</a>
+                                </li>
+                                <li class="item-with-ul">
+                                    <a href="category-page-thumbnails-shop-layout-1.html">Thumbnails</a>
+                                    <ul style="display: none;">
+                                        <li class="item-with-ul">
+                                            <a href="category-page-thumbnails-shop-layout-1.html">Shop</a>
+                                            <ul style="display: none;">
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-layout-1.html">Layout 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-layout-2.html">Layout 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-layout-3.html">Layout 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-layout-4.html">layout 4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-layout-5.html">Layout 5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-layout-6.html">Layout 6</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-shop-horizontal.html">Horizontal</a>
+                                                </li>
+                                            </ul>
+                                            <span class="touch-button"></span>
+                                        </li>
+                                        <li class="item-with-ul">
+                                            <a href="category-page-thumbnails-coupon-layout-1.html">Coupon</a>
+                                            <ul style="display: none;">
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-1.html">Layout 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-2.html">Layout 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-3.html">Layout 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-4.html">Layout 4</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-5.html">Layout 5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-6.html">Layout 6</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-7.html">Layout 7</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-layout-8.html">Layout 8</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category-page-thumbnails-coupon-horizontal.html">Horizontal</a>
+                                                </li>
+                                            </ul>
+                                            <span class="touch-button"></span>
+                                        </li>
+                                        <li>
+                                            <a href="category-page-thumbnails-breadcrumbs.html">Breadcrumbs</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                            </ul>
+                            <span class="touch-button"></span>
+                        </li>
+                        <li class="item-with-ul">
+                            <a href="product-shop-sidebar.html">Product </a>
+                            <ul style="display: none;">
+                                <li class="item-with-ul">
+                                    <a href="product-shop-sidebar.html">Shop</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="product-shop-sidebar.html">Sidebar</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-shop-sidebar-left.html">Sidebar Left</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-shop-centered.html">Centered</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                                <li class="item-with-ul">
+                                    <a href="product-coupon-default.html">Coupon</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="product-coupon-default.html">Default</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-coupon-meta-right.html">Meta right</a>
+                                        </li>
+                                        <li>
+                                            <a href="product-coupon-gallery.html">Gallery</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                            </ul>
+                            <span class="touch-button"></span>
+                        </li>
+                        <li class="item-with-ul">
+                            <a href="features-typography.html">Features</a>
+                            <ul style="display: none;">
+                                <li>
+                                    <a href="features-typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="features-elements.html">Elements</a>
+                                </li>
+                                <li>
+                                    <a href="features-grid.html">Grid</a>
+                                </li>
+                                <li>
+                                    <a href="features-icons.html">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="features-image-hover.html">Image Hovers</a>
+                                </li>
+                                <li>
+                                    <a href="features-sliders.html">Sliders</a>
+                                </li>
+                                <li>
+                                    <a href="features-media.html">Media</a>
+                                </li>
+                                <li>
+                                    <a href="features-lightbox.html">Lightbox</a>
+                                </li>
+                            </ul>
+                            <span class="touch-button"></span>
+                        </li>
+                        <li class="item-with-ul">
+                            <a href="blog-sidebar-right.html">Blog</a>
+                            <ul style="display: none;" class="">
+                                <li>
+                                    <a href="blog-sidebar-right.html">Sidebar Right</a>
+                                </li>
+                                <li>
+                                    <a href="blog-sidebar-left.html">Sidebar Left</a>
+                                </li>
+                                <li>
+                                    <a href="blog-full-width.html">Full Width</a>
+                                </li>
+                                <li class="item-with-ul">
+                                    <a href="post-sidebar-right.html">Post</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="post-sidebar-right.html">Sidebar Right</a>
+                                        </li>
+                                        <li>
+                                            <a href="post-sidebar-left.html">Sidebar Left</a>
+                                        </li>
+                                        <li>
+                                            <a href="post-full-width.html">Full Width</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                            </ul>
+                            <span class="touch-button"></span>
+                        </li>
+                        <li class="item-with-ul">
+                            <a href="page-full-width.html">Pages</a>
+                            <ul style="display: none;" class="">
+                                <li class="item-with-ul">
+                                    <a href="page-my-account-settings.html">My Account</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="page-my-account-settings.html">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-my-account-addresses.html">Address Book</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-my-account-orders.html">Orders History</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-my-account-wishlist.html">Wishlist</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                                <li>
+                                    <a href="page-full-width.html">Full Width</a>
+                                </li>
+                                <li>
+                                    <a href="page-sidebar-right.html">Sidebar Right</a>
+                                </li>
+                                <li>
+                                    <a href="page-sidebar-left.html">Sidebar Left</a>
+                                </li>
+                                <li>
+                                    <a href="page-faq.html">Faq</a>
+                                </li>
+                                <li>
+                                    <a href="page-about-us.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="page-team.html">Team</a>
+                                </li>
+                                <li>
+                                    <a href="page-cart.html">Shopping Cart</a>
+                                </li>
+                                <li>
+                                    <a href="page-checkout.html">Checkout</a>
+                                </li>
+                                <li>
+                                    <a href="page-404.html">404</a>
+                                </li>
+                                <li class="item-with-ul">
+                                    <a href="page-search.html">Search</a>
+                                    <ul style="display: none;">
+                                        <li>
+                                            <a href="page-search-black.html">Black</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-search-white.html">White</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-search-sticky.html">Sticky</a>
+                                        </li>
+                                        <li>
+                                            <a href="page-search-no-search.html">No Search</a>
+                                        </li>
+                                    </ul>
+                                    <span class="touch-button"></span>
+                                </li>
+                                <li>
+                                    <a href="page-contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <span class="touch-button"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-6">
+                <ul class="login-register">
+                    <li class="shopping-cart">
+                        <a href="page-cart.html"><i class="fa fa-shopping-cart"></i>My Cart</a>
+                        <div class="shopping-cart-box">
+                            <ul class="shopping-cart-items">
+                                <li>
+                                    <a href="product-shop-sidebar.html">
+                                        <img src="img/70x70.png" alt="Image Alternative text" title="AMaze">
+                                        <h5>New Glass Collection</h5><span class="shopping-cart-item-price">$150</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="product-shop-sidebar.html">
+                                        <img src="img/70x70.png" alt="Image Alternative text" title="Gamer Chick">
+                                        <h5>Playstation Accessories</h5><span class="shopping-cart-item-price">$170</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="page-cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
+                                </li>
+                                <li>
+                                    <a href="page-checkout.html"><i class="fa fa-check-square"></i> Checkout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="popup-text" href="#" data-effect="mfp-move-from-top"><i class="fa fa-sign-in"></i>Sign in</a>
+                    </li>
+                    <li>
+                        <a class="popup-text" href="#" data-effect="mfp-move-from-top"><i class="fa fa-edit"></i>Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+

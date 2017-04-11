@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Authorization Failed";
+}
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="">
+            <div class="portlet-title ">
+                <div class="caption">
+                    <i class="icon-calendar font-dark hide"></i>
+                    <span class="caption-subject font-white bold uppercase">@ViewBag.Title</span>
+                </div>
+            </div>
+
+
+            <div id="result" style="display:none;"></div>
+            <input type="hidden" id="rowId" name="rowId" />
+            <div class="portlet-body">
+
+
+                <h1>You are not authorize to view this page.</h1>
+                <br />
+                <h2> click here to @Html.ActionLink("Login", "Login", "Account")</h2>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-backdrop="static" class="modal fade modal-scroll" id="addTimeLogModal" tabindex="-1" aria-hidden="true"></div>
